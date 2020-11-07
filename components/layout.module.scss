@@ -7,7 +7,13 @@
 .container {
   max-width: 80rem;  
   padding: 0 1rem;
-  margin: 0 auto;
+  margin: 0 auto;  
+  width: 100%;
+}
+
+.footer{
+  background-color: #FEC23A;
+  padding: .25rem 0;
 }
   
 .header {
@@ -17,6 +23,21 @@
   top: 0;
   height: 80px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  &Logo{
+    color: #ffffff;    
+    font-weight: 300;
+    font-size: 2rem;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+.main{
+  margin-top: 80px;
+  flex: 1 1 auto;
 }
   
   .headerImage {

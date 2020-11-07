@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
+import ServiceItem from '../components/ServiceItem'
+import ServiceList from '../components/ServiceList'
 
 export default function Home() {
   return (
@@ -9,15 +9,15 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
+      <div>
         <p>Welcome to MYREI</p>
         <p>What do you want to do today?</p>
-        <div>
-          <Link href="/reic">
-            <div>REIC</div>
-          </Link>
-        </div>
-      </section>
+        <ServiceList >
+          
+            <ServiceItem />
+          
+        </ServiceList>
+      </div>
     </Layout>
   )
 }
